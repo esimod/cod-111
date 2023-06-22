@@ -1,0 +1,18 @@
+#Python: Metin Birleştirmek Ve Birleşik Metinler İçerisinde Harf Aramak
+#Online eğitimler için: https://www.excelsizeyeter.com/excelsizeyeter.com/udemy_giris.php adresine tıklayınız.
+yazı1 = "Akıllı bizi arayıp sormaz deli bacadan akar!"
+yazı2 = "Ağa güçlü olunca kul suçlu olur!"
+yazı3 = "Avcı ne kadar hile bilirse ayı da o kadar yol bilir!"
+yazı4 = "Lafla pilav pişse deniz kadar yağ benden!"
+yazı5 = "Zenginin gönlü oluncaya kadar fukaranın canı çıkar!"
+
+for harf in yazı1,yazı2,yazı3,yazı4,yazı5:
+    print(harf)
+#Yukarıdaki ifade ile aşağıdaki ifade arasında ciddi bir fark var. Aşağıdaki yazıyı birleştirip tek bir yazıymış gibi algıladığı için harflere göre işlem yapar. Yukarıdaki ise her birisini ayrı bir ifade olarak görmekte olup birleştirerek diziye çevirdi.
+for harf in yazı1+yazı2+yazı3+yazı4+yazı5:
+    print(harf)
+
+dizi1=[yazı1,yazı2,yazı3,yazı4,yazı5]
+dizi2=yazı1,yazı2,yazı3,yazı4,yazı5
+dizi3={yazı1,yazı2,yazı3,yazı4,yazı5}
+print(dizi1,dizi2,dizi3,sep="\n")
